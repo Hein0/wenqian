@@ -1,4 +1,4 @@
-﻿# 淘宝客
+# 淘宝客
 基于Vue 3
 
 ## 项目安装
@@ -50,8 +50,6 @@ https://pub.alimama.com/manage/overview/index.htm?spm=a219t.11816995.1998910419.
 #### 好单库
 http://publish.haodanku.com/login/index/returnurl/http%25253A%25252F%25252Fpublish.haodanku.com%25252Fapikey%25252Findex.html.html
 
-有问题可添加我的微信咨询
-备注清楚来路哦
-710070994
+
 
 
