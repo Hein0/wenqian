@@ -1,0 +1,7 @@
+const httpUrl = 'https://www.gomyorder.cn/';
+const apikey = 'maxd';
+const pid = 'mm_479070090_645900442_109195950297';
+const tb_name = 'kloran';
+const  taobao_key='27706268';
+const  taobao_secret='6505ff50b4d72c56fef583b2570593fa';
+const  footer='ÉÂICP±¸18019846ºÅ';
