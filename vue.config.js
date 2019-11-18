@@ -1,8 +1,8 @@
 module.exports = {
     devServer: {
-        port: 80,
+        port: 8009,
         https: false, // https:{type:Boolean}
-        open: false, //配置自动启动浏览器
+        open: true, //配置自动启动浏览器
         disableHostCheck: true,
         proxy: {
             '/api': {

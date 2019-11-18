@@ -8,7 +8,7 @@
                 <!--头部-->
                 <div class="head">
                     <span class="head-name">
-                        省钱兄
+                       柒仟度
                     </span>
                     <p class="head-signature">
                         购物先领券，一年省一半

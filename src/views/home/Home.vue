@@ -138,11 +138,11 @@
                 min_id: 1,
                 swipe: [ //轮播大图
                     {
-                        src: 'https://www.gomyorder.cn/chaozhi.jpg',
+                        src: require('../../../src/assets/chaozhi.jpg'),
                         to: '/home/brand',
                     },
                     {
-                        src: 'https://www.gomyorder.cn/daren.jpg',
+                        src: require('../../../src/assets/daren.jpg'),
                         to: '/talent',
                     },
                 ],
