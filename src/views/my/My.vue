@@ -54,7 +54,7 @@
                 <van-popup position="bottom" v-model="cs" title="客服联系">
                     <van-row type="flex" justify="center" style="margin: 20px 0 20px 0">
                         <van-col span="24" style="text-align: center;justify-content: center;align-items: center">
-                            联系微信 710070994
+                            联系微信 Hein-xiao
                         </van-col>
                     </van-row>
                 </van-popup>

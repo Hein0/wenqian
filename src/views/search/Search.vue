@@ -134,7 +134,7 @@
                     console.log(e);
                 }
                 this.keyword = '';
-                this.$axios.get('/api/hot_key/apikey/maxd').then((rsp) => {
+                this.$axios.get('/api/hot_key/apikey/Hein').then((rsp) => {
                     if (rsp.data.code === 1) {
                         this.hotKeyword = [];
                         for (let i = 0; i < rsp.data.data.length; i++) {
@@ -150,7 +150,7 @@
                 }).catch((e) => {
                     this.$alert.dialogUnknown(e);
                 });
-                this.$axios.get('/api/get_free_shipping_data/apikey/maxd/min_id/1/back/20/cat_id/0').then((rsp) => {
+                this.$axios.get('/api/get_free_shipping_data/apikey/Hein/min_id/1/back/20/cat_id/0').then((rsp) => {
                     if (rsp.data.code === 1) {
                         this.item_info = rsp.data.data;
                     } else {

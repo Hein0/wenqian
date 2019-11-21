@@ -85,7 +85,7 @@
         },
         mounted() {
 
-            this.$axios.get('/api/talent_article/apikey/maxd/id/' + this.$route.query.id + '/', {
+            this.$axios.get('/api/talent_article/apikey/Hein/id/' + this.$route.query.id + '/', {
                 params: {
                     articleId: this.$route.query.id
                 }

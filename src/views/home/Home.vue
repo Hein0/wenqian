@@ -212,9 +212,9 @@
         },
         methods: {
 
-            ///api/column/apikey/maxd/type/9/back/20/min_id/1/sort/9/cid/
+            ///api/column/apikey/Hein/type/9/back/20/min_id/1/sort/9/cid/
             getData(page) {
-                this.$axios.get("/api/column/apikey/maxd/type/9/back/20/min_id/" + this.min_id + "/sort/9/cid/" + this.cat_id).then((rsp) => {
+                this.$axios.get("/api/column/apikey/Hein/type/9/back/20/min_id/" + this.min_id + "/sort/9/cid/" + this.cat_id).then((rsp) => {
                     if (rsp.data.code === 1) {
                         if (page === 1) {
                             this.deserver = [];

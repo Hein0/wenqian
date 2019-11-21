@@ -114,7 +114,7 @@
         },
         methods: {
             getData() {
-                this.$axios.get('/api/get_trill_data/apikey/maxd/min_id/0/back/20/cat_id/' + this.activeKey).then((rsp) => {
+                this.$axios.get('/api/get_trill_data/apikey/Hein/min_id/0/back/20/cat_id/' + this.activeKey).then((rsp) => {
                     if (rsp.data.code == 1) {
                         this.goods = rsp.data.data;
                     } else {

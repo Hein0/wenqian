@@ -112,7 +112,7 @@
             },
             getData(index, page) {
 
-                this.$axios.get('/api/brand/apikey/maxd/back/20/min_id/'+this.min_id+'/brandcat/'+index, {
+                this.$axios.get('/api/brand/apikey/Hein/back/20/min_id/'+this.min_id+'/brandcat/'+index, {
                 }).then((rsp) => {
 
                     console.log(rsp.data);

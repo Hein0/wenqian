@@ -232,7 +232,7 @@
     export default {
         name: "Details",
         mounted() {
-            this.$axios.get('/api/item_detail/apikey/maxd/itemid/' + this.$route.query.id).then((rsp) => {
+            this.$axios.get('/api/item_detail/apikey/Hein/itemid/' + this.$route.query.id).then((rsp) => {
                 if (rsp.data.code == 1) {
                     rsp.data.data.itemId = rsp.data.data.itemid;
                     if (rsp.data.data.taobao_image && rsp.data.data.taobao_image.length > 0) {
@@ -265,7 +265,7 @@
                         console.log(e);
                     }
 
-                    // this.$axios.get('/api/get_similar_info/apikey/maxd/itemid/' + this.details.itemid).then((rsp) => {
+                    // this.$axios.get('/api/get_similar_info/apikey/Hein/itemid/' + this.details.itemid).then((rsp) => {
                     //     if (rsp.data.code == 1) {
                     //         this.like = rsp.data.data;
                     //     } else {
@@ -349,7 +349,7 @@
                         document.addEventListener('WeixinJSBridgeReady', ready, false)
                     } else {
                         if (window.__wxjs_environment === 'miniprogram') {
-                            // this.$toast('很抱歉小程序中无法打开淘宝链接请打开外部浏览器访问 www.gomyorder.cn');
+                            // this.$toast('很抱歉小程序中无法打开淘宝链接请打开外部浏览器访问 www.qiqiandu.com');
                             this.showWei = true;
                         } else {
                             this.show_share = true;
@@ -377,6 +377,7 @@
                     e.clearSelection();
                 });
             },
+			// 分享
             shareT() {
                 // this.shareFriend = true;
                 this.$toast('正在加载数据，请耐心等待...');
@@ -423,38 +424,39 @@
                     location.assign(url)
                 }
             },
-            btv() { //领券
-                // if (config.isWeiXin()) {
-                //     if (!window.WeixinJSBridge || !WeixinJSBridge.invoke) {
-                //         document.addEventListener('WeixinJSBridgeReady', ready, false)
-                //     } else {
-                //         if (window.__wxjs_environment === 'miniprogram') {
-                //             // this.$toast('很抱歉小程序中无法打开淘宝链接请打开外部浏览器访问 www.gomyorder.cn');
-                //             // this.showWei = true;
-                //             var client = new ApiClient({
-                //                 'appkey':config.taobao_key,
-                //                 'appsecret':config.taobao_secret,
-                //                 'url':'http://gw.api.taobao.com/router/rest'
-                //             });
-                //
-                //             client.executeWithHeader('taobao.tbk.tpwd.create',
-                //                 {
-                //                     'text':'ffffffffffffff',
-                //                     'url':"https://uland.taobao.com/coupon/edetail?e=cl8JLc5GmDVD6TM1M2v5Gycdtv8tinp%2BgfTc9fpq7nUCsHqIcdDRdp6%2B1vjUuirw41ZzjSbmUlAb%2FC9mV7o9YE328fa5dSO8GyW%2B9l4dctD0pRrjipOmj%2Bdth9k8bqqSHKTgBzHkoM7XTQC0vfau6E%2F9Zk7cDx8UPY2GSU4OeGccr%2FxnN7Ts%2F10ZxroIJU7s&traceId=0b15050e15640210237725780e&union_lens=lensId:0b015dd6_0c10_16c26eae4c8_e40f&xId=n9ACMMdhoOEjwy80MqiaeDSXPtrSgu83YtUL1zgLpIjFADO8MsHohneUPwftVvQAEBY0vLbbpwMLVFa18gK4Sc&thispid=mm_479070090_645900442_109195950297&src=fklm_hltk&from=tool&sight=fklm",
-                //                 },
-                //                 {},
-                //                 function (error,response) {
-                //                     if(!error)
-                //                     this.$toast(response.data.model);
-                //                         // console.log(response.data.model);
-                //                     else
-                //                         console.log(error);
-                //                 });
-                //         } else {
-                //             this.show_share = true;
-                //         }
-                //     }
-                // } else {
+			//领券
+            btv() { 
+                if (config.isWeiXin()) {
+                    if (!window.WeixinJSBridge || !WeixinJSBridge.invoke) {
+                        document.addEventListener('WeixinJSBridgeReady', ready, false)
+                    } else {
+                        if (window.__wxjs_environment === 'miniprogram') {
+                            // this.$toast('很抱歉小程序中无法打开淘宝链接请打开外部浏览器访问 www.qiqiandu.com');
+                            // this.showWei = true;
+                            var client = new ApiClient({
+                                'appkey':config.taobao_key,
+                                'appsecret':config.taobao_secret,
+                                'url':'http://gw.api.taobao.com/router/rest'
+                            });
+                
+                            client.executeWithHeader('taobao.tbk.tpwd.create',
+                                {
+                                    'text':'ffffffffffffff',
+                                    'url':"https://uland.taobao.com/coupon/edetail?e=cl8JLc5GmDVD6TM1M2v5Gycdtv8tinp%2BgfTc9fpq7nUCsHqIcdDRdp6%2B1vjUuirw41ZzjSbmUlAb%2FC9mV7o9YE328fa5dSO8GyW%2B9l4dctD0pRrjipOmj%2Bdth9k8bqqSHKTgBzHkoM7XTQC0vfau6E%2F9Zk7cDx8UPY2GSU4OeGccr%2FxnN7Ts%2F10ZxroIJU7s&traceId=0b15050e15640210237725780e&union_lens=lensId:0b015dd6_0c10_16c26eae4c8_e40f&xId=n9ACMMdhoOEjwy80MqiaeDSXPtrSgu83YtUL1zgLpIjFADO8MsHohneUPwftVvQAEBY0vLbbpwMLVFa18gK4Sc&thispid=mm_479070090_645900442_109195950297&src=fklm_hltk&from=tool&sight=fklm",
+                                },
+                                {},
+                                function (error,response) {
+                                    if(!error)
+                                    this.$toast(response.data.model);
+                                        // console.log(response.data.model);
+                                    else
+                                        console.log(error);
+                                });
+                        } else {
+                            this.show_share = true;
+                        }
+                    }
+                } else {
                 this.$toast('正在获取淘口令，请耐心等待...');
                 let fromData = new FormData();
                 fromData.append('itemid', this.$route.query.id);
@@ -488,7 +490,7 @@
                 });
             }
 
-            // },
+            },
         }
     }
 </script>

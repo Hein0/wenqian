@@ -136,7 +136,7 @@
                 this.getData(this.tagIndex, this.tab[this.tagIndex].total);
             },
             getData(index, page) {
-                this.$axios.get('/api/supersearch/apikey/maxd/keyword/' + this.keyword + '/back/20/sort/' + this.position + '/min_id/' + this.min_id + '/tb_p/' + this.tb_p, {}).then((rsp) => {
+                this.$axios.get('/api/supersearch/apikey/Hein/keyword/' + this.keyword + '/back/20/sort/' + this.position + '/min_id/' + this.min_id + '/tb_p/' + this.tb_p, {}).then((rsp) => {
                     if (rsp.data.code == 1) {
                         if (page == 1) {
                             this.tab[index].data = [];

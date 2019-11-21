@@ -14,7 +14,7 @@ module.exports = {
                 }
             },
             '/tao': {
-                target: 'https://www.gomyorder.cn',   // 需要请求的地址
+                target: 'http://www.qiqiandu.com',   // 需要请求的地址
                 ws: false,
                 changeOrigin: false,  // 是否跨域
                 pathRewrite: {

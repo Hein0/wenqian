@@ -136,7 +136,7 @@
                 this.getHandpick(this.handpickLoad.total+=1);
 			},
 			getHandpick(page) { //获取精选商品数据
-                this.$axios.get('/api/selected_item/apikey/maxd/min_id/'+this.min_id
+                this.$axios.get('/api/selected_item/apikey/Hein/min_id/'+this.min_id
 				).then((rsp) => {
                     if (rsp.data.code == 1) {
                         if (page == 1) {
@@ -165,7 +165,7 @@
                 this.getNews(this.newsLoad.total+=1);
 			},
 			getNews(page) { //获取好货专场数据
-                this.$axios.get('/api/subject_hot/apikey/maxd/min_id/'+this.min_id1,{
+                this.$axios.get('/api/subject_hot/apikey/Hein/min_id/'+this.min_id1,{
                     params: {
                         page: page,
 					}

@@ -162,7 +162,7 @@
                 this.getData(this.tagIndex, this.tab[this.tagIndex].total);
             },
             getData(index, page) {
-                this.$axios.get('/api/column/apikey/maxd/type/' + this.type + '/back/20/sort/' + this.sort + '/min_id/' + this.m_id + '/cid/' + this.cid
+                this.$axios.get('/api/column/apikey/Hein/type/' + this.type + '/back/20/sort/' + this.sort + '/min_id/' + this.m_id + '/cid/' + this.cid
                 ).then((rsp) => {
 
                     if (rsp.data.code === 1) {
